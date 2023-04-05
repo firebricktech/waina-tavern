@@ -121,7 +121,7 @@ h5 {
 	font-weight: 400;
 	right: 0;
 	padding-left: 8px;
-	background-color: #fff;
+	background-color: #f8f9fa;
 	z-index: 0;
 }
 .item h4 {
@@ -137,4 +137,8 @@ h5 {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	background-color: #ff6200;
+}
+
+li a{
+	background-color: #f8f9fa;
 }

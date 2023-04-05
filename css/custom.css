@@ -9,7 +9,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: white;
+  background-color: #f8f9fa;
   margin: 0;
   display: flex;
   flex-direction: column;
