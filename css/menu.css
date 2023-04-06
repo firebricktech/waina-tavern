@@ -108,8 +108,13 @@ h5 {
 	border-radius: 12px;
 	line-height: 21px;
 }
-.veggie {
-	background-color: #CADECE !important;
+
+.vegan {
+	background-image: url("../images/vegan.png");
+	background-repeat: no-repeat;
+	background-size: 40px;
+	background-position: left;
+	
 }
 .spicy {
 	color: #ec4e00;
