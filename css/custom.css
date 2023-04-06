@@ -96,7 +96,7 @@ body {
   background-color: #fff;
   border: 2px solid #f0f0f0; }
   .back .inner {
-    grid-template-rows: 1fr 2fr 1fr 2fr 14fr 1fr 1fr;
+    grid-template-rows: 0fr 0fr 0fr 0fr 14fr 0fr 0fr;
     grid-template-columns: repeat(4, auto);
     grid-column-gap: 0.8em;
     justify-items: center; }
