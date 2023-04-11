@@ -64,6 +64,25 @@
 <hr>
 <div class="wrapper">
 	<div class="card">
+		<input type="checkbox" id="card9" class="more">
+		<div class="content">
+			<div id="section" class="front section">
+				<div class="inner">
+					<h2>to drink</h2>
+					<label for="card9" class="button" aria-hidden="true"> Details </label>
+				</div>
+			</div>
+			<div class="back">
+				<div class="inner">
+					<div class="description">
+						<p>We are pleased to offer you an impressive selection of wines, as well as a variety of local and imported beers. Our bartender takes pride in creating unique and delicious cocktails using only the freshest ingredients, such as herbs, fruits, and spices. Come and enjoy a cozy and intimate atmosphere while sipping on your favorite drink.</p>
+					</div>
+					<label for="card9" class="button return" aria-hidden="true"> <i class="fa-solid fa-rotate-left"></i> </label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="card">
 		<input type="checkbox" id="card1" class="more" aria-hidden="true">
 		<div class="content">
 			<div class="front" style="background-image: url('./images/salgadinho.png')">
@@ -226,26 +245,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="card">
-		<input type="checkbox" id="card9" class="more">
-		<div class="content">
-			<div class="front" style="background-image: url('./images/kibe.png')">
-				<div class="inner">
-					<h2>kibe</h2>
-					<label for="card9" class="button" aria-hidden="true"> Details </label>
-				</div>
-			</div>
-			<div class="back">
-				<div class="inner">
-					<div class="description">
-						<p>Kibe is a brazilian dish that is made with beef meat, bulgur wheat, onions, and a variety of spices. The mixture is kneaded together and then formed into small, football-shaped balls or patties, which are fried until crispy on the outside and tender on the inside.</p>
-					</div>
-					<div class="price">5.50€</div>
-					<label for="card9" class="button return" aria-hidden="true"> <i class="fa-solid fa-rotate-left"></i> </label>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<div class="card">
 		<input type="checkbox" id="card10" class="more">
 		<div class="content">
@@ -373,5 +373,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> 
 <script src="js/popper.min.js"></script> 
 <script src="js/bootstrap-4.4.1.js"></script>
+<script type="text/javascript">
+    var images = [ "beer.png",  
+					   "wine.png",  
+					   "cocktail.png" ]
+    $(function () {
+        var i = 0;
+        $("#section").css("background-image", "url(images/" + images[i] + ")");
+        setInterval(function () {
+            i++;
+            if (i == images.length) {
+                i = 0;
+            }
+            $("#section").hide(0, function () {
+                $(this).css("background-image", "url(images/" + images[i] + ")");
+                $(this).show( );
+            });
+        }, 5000);
+    });
+</script>
 </body>
 </html>
